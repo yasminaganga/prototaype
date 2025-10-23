@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-
-   :root {
+:root {
       --main-color: #800020;       
       --accent-color: #f0dcd3 ;     
       --text-color: #ffffff;       
@@ -86,7 +84,7 @@ a{
 
 
  
-=======
+
 
    :root {
       --main-color: #800020;       
@@ -171,4 +169,4 @@ footer{
 a{ 
   color: #f0dcd3;
 }
->>>>>>> 1ca129e51a2c1302317e934ff8e5aa1da89d91fb
+
