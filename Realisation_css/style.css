@@ -1,3 +1,4 @@
+
 :root {
   --main-color: #800020;       
   --accent-color: #f0dcd3;     
@@ -43,8 +44,8 @@ header h1:hover {
 }
 
 main {
-  margin: 40px auto; /* مسافة من الأعلى والأسفل */
-  width: 90%; /* بعرض مناسب للشاشات الكبيرة */
+  margin: 40px auto; 
+  width: 90%; 
 }
 img {
   border-radius: 50%;
@@ -227,3 +228,4 @@ footer {
     font-size: 16px;
   }
 }
+
