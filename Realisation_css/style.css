@@ -207,20 +207,20 @@ footer {
 @media(max-width:768px){
   main{
     grid-template-columns: 1fr;
-    margin: 20px; /* تقليل الهوامش للشاشات الصغيرة */
+    margin: 20px; 
   }
 
   nav {
-    flex-direction: column; /* جعل الروابط تتراص عمودياً */
+    flex-direction: column; 
     gap: 15px;
   }
 
   img {
-    width: 150px; /* تصغير الصورة على الشاشات الصغيرة */
+    width: 150px; 
   }
 
   h1 {
-    font-size: 28px; /* تصغير العنوان */
+    font-size: 28px; 
   }
 
   p {
