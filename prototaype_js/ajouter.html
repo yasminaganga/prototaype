@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque</title>
+</head>
+<style>
+ 
+</style>
+<body>
+    <header class="header">
+        <h1>Bibliothèque</h1>
+    </header>
+    <div class="listes-livres"></div>
+    <main>
+        <form>
+    <h2>➕ Ajouter un nouveau livre</h2>
+    <input type="number" id="code" placeholder="Code du livre" required>
+    <input type="text" id="titre" placeholder="Titre du livre" required>
+    <input type="text" id="auteur" placeholder="Auteur" required>
+    <input type="number" id="annee" placeholder="Année" required>
+    <input type="number" id="prix" placeholder="Prix (en DH)" required>
+    <label for="disponible"> disponible</label>
+    <input type="checkbox" id="disponible">
+    <button type="submit">Ajouter</button>
+    </form>
+    </main>
+    <script src="script.js"></script>
+    </body>
+    </html>

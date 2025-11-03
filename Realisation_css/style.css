@@ -42,7 +42,10 @@ header h1:hover {
   color: #ffe6ef;
 }
 
-
+main {
+  margin: 40px auto; /* مسافة من الأعلى والأسفل */
+  width: 90%; /* بعرض مناسب للشاشات الكبيرة */
+}
 img {
   border-radius: 50%;
   width: 200px;
@@ -201,5 +204,26 @@ footer {
   border-radius: 15px 15px 0 0;
 
 }
+@media(max-width:768px){
+  main{
+    grid-template-columns: 1fr;
+    margin: 20px; /* تقليل الهوامش للشاشات الصغيرة */
+  }
 
+  nav {
+    flex-direction: column; /* جعل الروابط تتراص عمودياً */
+    gap: 15px;
+  }
 
+  img {
+    width: 150px; /* تصغير الصورة على الشاشات الصغيرة */
+  }
+
+  h1 {
+    font-size: 28px; /* تصغير العنوان */
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
