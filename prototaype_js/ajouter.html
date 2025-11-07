@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliothèque</title>
 </head>
-<style>
- 
-</style>
+
+
 <body>
     <header class="header">
         <h1>Bibliothèque</h1>
+        <ul>
+            <li><a href="cataloge.html">Retour</a></li>
+        </ul>
     </header>
-    <div class="listes-livres"></div>
     <main>
-        <form>
-    <h2>➕ Ajouter un nouveau livre</h2>
-    <input type="number" id="code" placeholder="Code du livre" required>
-    <input type="text" id="titre" placeholder="Titre du livre" required>
-    <input type="text" id="auteur" placeholder="Auteur" required>
-    <input type="number" id="annee" placeholder="Année" required>
-    <input type="number" id="prix" placeholder="Prix (en DH)" required>
+        <form class="form">
+    <h2> Ajouter un nouveau livre</h2>
+    <input type="number" id="code-id" placeholder="Code du livre" required>
+    <input type="text" id="titre-id" placeholder="Titre du livre" required>
+    <input type="text" id="auteur-id" placeholder="Auteur" required>
+    <input type="number" id="annee-id" placeholder="Année" required>
+    <input type="number" id="prix-id" placeholder="Prix (en DH)" required>
     <label for="disponible"> disponible</label>
-    <input type="checkbox" id="disponible">
+    <input type="checkbox" id="disponible-id">
     <button type="submit">Ajouter</button>
     </form>
+  
+  
     </main>
     <script src="script.js"></script>
     </body>
     </html>
+
+
+
+
+
+
+
+

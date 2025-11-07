@@ -1,27 +1,29 @@
+
+
 let form = document.querySelector("form");
 form.addEventListener(("submit"),function(E){
     E.preventDefault()
-let code = Number(document.getElementById("code").value);
-let titre = document.getElementById("titre").value;
-let auteur = document.getElementById("auteur").value;
-let annee = Number(document.getElementById("annee").value);
-let prix = Number(document.getElementById("prix").value);
-let checkbox = document.getElementById("disponible").checked;
+let code = document.getElementById("code-id").value;
+let titre = document.getElementById("titre-id").value;
+let auteur = document.getElementById("auteur-id").value;
+let annee = document.getElementById("annee-id").value;
+let prix = document.getElementById("prix-id").value;
+let checkbox = document.getElementById("disponible-id").checked;
 
-let livre={
+let livre ={
     code,titre,auteur,annee,prix,checkbox
 }
 
-if (window.opener && !window.opener.closed){
+if (window.opener && window.opener.open){
     window.opener.ajouter(livre);
     alert("livre ajoute");
     window.close();
-
-    
-}else{
+}
+else{
     alert("pas ajoute");
 }
-ajouter() ;
+
 });
+ajouter() ;
 
 
