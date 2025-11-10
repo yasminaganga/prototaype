@@ -1,8 +1,4 @@
-const bibliotheque = [
-     { code:12,titre: "Clean Code", auteur: "Robert C. Martin", annee: 2008,checkbox: true, prix: 150 },
-
-  {code:45, titre: "Eloquent JavaScript", auteur: "Marijn Haverbeke", annee: 2018, checkbox: true, prix: 200 },
-];
+const bibliotheque = [];
 document.getElementById("ajouter").addEventListener("click",function(){
     window.open("ajouter.html");
 });
@@ -19,12 +15,13 @@ function afficher(filtres = bibliotheque) {
     carte.classList.add("carte")
     listes.appendChild(carte);
     carte.innerHTML =
-     `<h1>LE LIVRE </h1>
+     `
+     <h1>LE LIVRE </h1>
 <p> Le Nom de livre : ${livre.titre}</p>
 <p> Le Nom de l'auteur : ${livre.auteur}</p>
 <p> L'annee de sortie de livre : ${livre.annee}</p>
 <p> Le prix de livre : ${livre.prix}</p>
-<p> Status : ${livre.checkbox?"disponible":"pas disponible"}</p>`;
+<p> Status : ${livre.checkbox?"🟢":"🔴"}</p>`;
 
 let btn = document.createElement("button");
 btn.classList.add("btn")
@@ -60,7 +57,7 @@ search.addEventListener("input", function() {
 
     // Filtrer les livres selon le texte tapé
     let filtres = bibliotheque.filter(livre =>
-        livre.titre.toLowerCase().includes(text)
+        livre.titre.toLowerCase().includes(text) //incloudes katfiltry 3la 7sab lklma
         
     );
 afficher(filtres);
@@ -86,13 +83,3 @@ function ajouter(livre) {
    bibliotheque.push(livre);
 afficher(bibliotheque); 
 }
-
-
-
-
- afficher();
-
-
-
-
-

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Library</h1>
+        <ul>
+            <li><a href="catalog.html">Back</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <form class="form">
+            <h2>Add a new book</h2>
+
+            <input type="number" id="code-id" placeholder="Book code" required>
+            <input type="text" id="title-id" placeholder="Book title" required>
+            <input type="text" id="author-id" placeholder="Author" required>
+            <input type="number" id="year-id" placeholder="Year" required>
+            <input type="number" id="price-id" placeholder="Price (in DH)" required>
+
+            <label for="available-id">Available</label>
+            <input type="checkbox" id="available-id">
+
+            <button type="submit">Add</button>
+        </form>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

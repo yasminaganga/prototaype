@@ -1,42 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliothèque</title>
+    <title>Ajouter un livre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            
+        }
+        form {
+
+            background: rgba(255, 255, 255, 0.342);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 10px;
+            outline: none;
+            border: brown 1px solid;
+        }
+        input{
+            background: transparent;
+        }
+        button {
+            background: linear-gradient(to right, #00f2fe, #d400ff);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        label[for="disponible"] {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        input[type="checkbox"]{
+            background-color: black;
+
+        }
+        input[type="text"]{
+            background: transparent;
+        }
+    </style>
 </head>
-
-
-<body>
-    <header class="header">
-        <h1>Bibliothèque</h1>
-        <ul>
-            <li><a href="cataloge.html">Retour</a></li>
-        </ul>
-    </header>
-    <main>
-        <form class="form">
-    <h2> Ajouter un nouveau livre</h2>
-    <input type="number" id="code-id" placeholder="Code du livre" required>
-    <input type="text" id="titre-id" placeholder="Titre du livre" required>
-    <input type="text" id="auteur-id" placeholder="Auteur" required>
-    <input type="number" id="annee-id" placeholder="Année" required>
-    <input type="number" id="prix-id" placeholder="Prix (en DH)" required>
-    <label for="disponible"> disponible</label>
-    <input type="checkbox" id="disponible-id">
-    <button type="submit">Ajouter</button>
+<body background="img/Grenverket 1200x600.jpg">
+    <form>
+      <center>
+      <h2>Ajouter un nouveau livre</h2>
+      <input type="number" id="code" placeholder="Code du livre" required>
+      <input type="text" id="titre" placeholder="Titre du livre" required>
+      <input type="text" id="auteur" placeholder="Auteur" required>
+      <input type="number" id="annee" placeholder="Année" required>
+      <input type="number" id="prix" placeholder="Prix (en DH)" required>
+      <input type="checkbox" id="disponible" checked><label for="disponible">Disponible</label>
+      <button type="submit">Ajouter</button>
+      </center>
     </form>
-  
-  
-    </main>
+
     <script src="script.js"></script>
-    </body>
-    </html>
-
-
-
-
-
-
-
-
+</body>
+</html>

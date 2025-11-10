@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+   <style>
+  
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(165, 42, 42, 0.534);
+        backdrop-filter: blur(5px);
+        color: white;
+        border-radius: 10px;
+        padding: 15px 30px;
+        margin: 10px 20px;
+     box-shadow: 0 0 10px brown,
+     0 0 20px brown,
+     0 0 30px brown;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    #search {
+        padding: 10px 20px;
+        width: 300px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+    #search:focus {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    #ajouter {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+    #ajouter:hover {
+        background-color: beige;
+        transform: scale(1.05);
+    }
+
+    #listeslivres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .carte {
+        background: rgba(255, 255, 255, 0.39);
+        backdrop-filter: blur(5px);
+        border-radius: 12px;
+        padding: 20px;
+        width: 260px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .carte:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 15px;
+        transition: background 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #c0392b;
+    }
+
+    #statistic {
+        margin: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #555;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body background="img/Grenverket 1200x600.jpg">
+    <header>
+       <h1>Bibliothèque</h1>
+        <input type="text" id="search" placeholder="Rechercher par titre...">
+    <button id="ajouter"><i class='bx  bx-plus'    ></i> </button>
+    </header>
+
+     
+       
+    <p id="statistic"></p>
+    <div id="listeslivres"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
