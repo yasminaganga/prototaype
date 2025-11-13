@@ -21,6 +21,7 @@ function afficher(filtres = bibliotheque) {
 <p> Le Nom de l'auteur : ${livre.auteur}</p>
 <p> L'annee de sortie de livre : ${livre.annee}</p>
 <p> Le prix de livre : ${livre.prix}</p>
+<p> editeur de livre : ${livre.titre}</p>
 <p> Status : ${livre.checkbox?"🟢":"🔴"}</p>`;
 
 let btn = document.createElement("button");
