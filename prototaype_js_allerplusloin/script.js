@@ -21,30 +21,30 @@ searchBtn.addEventListener("click", () => {
       const wind = document.querySelector("#windSpeed");
 
       
-    //   switch (data.weather[0].main) {
-    //     case "Clear":
-    //       img.src = "assist/clear.png";
-    //       break;
-    //     case "Rain":
-    //       img.src = "assist/rain.png";
-    //       break;
-    //     case "Snow":
-    //       img.src = "assist/snow.png";
-    //       break;
-    //     case "Clouds":
-    //       img.src = "assist/cloud.png";
-    //       break;
-    //     case "Mist":
-    //       img.src = "assist/mist.png";
-    //       break;
-    //     default:
-    //       img.src = "assist/cloud.png";
-    //   }
+       switch (data.weather[0].main) {
+      case "Clear":
+      img.src = "assist/clear.png";
+ break;
+ case "Rain":
+   img.src = "assist/rain.png";
+      break;
+    case "Snow":
+       img.src = "assist/snow.png";
+       break;
+    case "Clouds":
+     img.src = "assist/cloud.png";
+         break;
+       case "Mist":
+        img.src = "assist/mist.png";
+     break;
+     default:
+     img.src = "assist/cloud.png";
+       }
 
       temp.innerHTML = Math.round(data.main.temp) + "°C";
       description.innerHTML = data.weather[0].description;
       humi.innerHTML = "Humidity: " + data.main.humidity + "%";
-      wind.innerHTML = "Wind: " + data.wind.speed + " Km/h";
+      wind.innerHTML = "Wind: " + data.wind.speed + " Km/h";  
 
       input.value = "";
     })
