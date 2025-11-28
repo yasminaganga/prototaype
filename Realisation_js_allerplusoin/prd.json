@@ -1,0 +1,132 @@
+{
+  "products": [
+    {
+     "id":"1",
+      "nom": "black watches collection",
+      "image": "image/7.jpeg",
+      "prix":150 ,
+      "promo":99 
+     
+    },
+    {
+      "id":"2",
+      "nom": "watches collection",
+      "image":"image/8.jpeg",
+      "prix":555,
+    "promo": null
+   
+    },
+
+    {
+     "id":"3",
+      "nom": "watches collection 2",
+      "image": "image/9.jpeg",
+      "prix":200 ,
+      "promo":150 
+     
+    },
+    {
+      "id":"4",
+      "nom": "watches collection 3",
+      "image": "image/10.jpeg",
+      "prix":555 ,
+      "promo": null
+   
+    },
+
+    {
+     "id":"5",
+      "nom": "watches collection 4",
+      "image": "image/11.jpeg",
+      "prix":250 ,
+      "promo":150 
+     
+    },
+    {
+      "id":"6",
+      "nom": "A collection of green watches. ",
+      "image": "image/12.jpeg",
+      "prix": 555,
+      "promo": null
+   
+    },
+
+    {
+     "id":"7",
+      "nom": "rings",
+      "image": "image/imagg1.jpeg",
+      "prix":300 ,
+      "promo": 299
+     
+    },
+    {
+      "id":"8",
+      "nom": "earrings",
+      "image": "image/img2.jpeg",
+      "prix":555 ,
+      "promo": null
+   
+    },
+
+    {
+     "id":"9",
+      "nom": "women's rings",
+      "image": "image/img3.jpeg",
+      "prix":555 ,
+      "promo":444
+     
+    },
+    {
+      "id":"10",
+      "nom": "hair clips",
+      "image": "image/img4.jpeg",
+      "prix":555 ,
+      "promo": null
+   
+    },
+
+    {
+     "id":"11",
+      "nom": "hair clips 2",
+      "image": "image/img5.jpeg",
+      "prix":777 ,
+      "promo": 666
+     
+    },
+    {
+      "id":"12",
+      "nom": "A collection of green watches",
+      "image": "image/img6.jpeg",
+      "prix":555 ,
+      "promo": null
+   
+    },
+       {
+      "id":"13",
+      "nom": "BAG",
+      "image": "image/bag1.jpeg",
+      "prix":555 ,
+      "promo": null
+   
+    },
+
+    {
+     "id":"14",
+      "nom": "BAG",
+      "image": "image/bag2.jpeg",
+      "prix":777 ,
+      "promo": 666
+     
+    },
+    {
+      "id":"15",
+      "nom": " greenBAG",
+      "image": "image/bag4.jpeg",
+      "prix":555 ,
+      "promo": null
+   
+    }
+
+    
+         ]
+}  
