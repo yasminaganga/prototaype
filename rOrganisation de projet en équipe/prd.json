@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+     "id":"1",
+      "nom": "black watches collection",
+      "image": "image/7.jpeg",
+      "prix":150 ,
+      "promo":99 
+     
+    },
+       {
+      "id":"2",
+      "nom": "watches collection",
+      "image":"image/8.jpeg",
+      "prix":555,
+    "promo": null
+   
+    },
+
+    {
+     "id":"3",
+      "nom": "watches collection 2",
+      "image": "image/9.jpeg",
+      "prix":200 ,
+      "promo":150 
+     
+    }
+             ]
+} 
