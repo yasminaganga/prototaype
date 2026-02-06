@@ -29,7 +29,7 @@ if(!empty($_POST)){
  <form method="post">
      Nombre 1 : <input type="text" name="n1"><br><br>
      Nombre 2 : <input type="text" name="n2"><br><br>
-     Opération :
+     <!-- Opération : -->
      <select name="op">
          <option>+</option>
          <option>-</option>
